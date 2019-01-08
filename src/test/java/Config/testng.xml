@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sam's MRM test Suite" thread-count="2" parallel="tests">
+<listeners>
+		<listener class-name="ExtentReport.TestListener" />
+	</listeners>
+
+	<test name="Chrome" parallel="false">
+
+		<parameter name="browserType" value="Chrome"></parameter>
+		<parameter name="applicationURL" value="http://cervrcn2020a.cn.wal-mart.com:8080/MRMApp/#/login"></parameter>
+
+
+		<classes>
+
+			 <class name="SAM_MRM.SAM_CRM_Test_File.LoginTest"></class>
+			 <class name="SAM_MRM.SAM_CRM_Test_File.HomepageTest"></class> 
+			
+			<class name="SAM_MRM.SAM_CRM_Test_File.CampaignDesignTest"></class>
+			<class name="SAM_MRM.SAM_CRM_Test_File.AutomatedMessageTest"></class>  
+			 
+		</classes>
+	</test>
+
+</suite>
