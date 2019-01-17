@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="EDA-Brick_testSuite" thread-count="2" parallel="tests">
+
+	<test name="ChromeTest" parallel="false">
+		<parameter name="browserType" value="Chrome"></parameter>
+		<parameter name="applicationURL" value="https://www.youtube.com/"></parameter>
+
+		<classes>
+			<class name="test.testYoutubeTest"></class>
+			
+		</classes>
+	</test>
+</suite>
+
